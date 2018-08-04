@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Retail Goods Analysis</title>
+	<!-- <title>The duplicates title</title> -->
+	<meta charset="utf-8">
+	<meta name="description" content="A product to analyze and visualize trends for retail industry">
+	<meta name="keywords" content="retail industry solution">
+	<link rel="stylesheet" type="text/css" href="./css/ca.css">
+	<!-- <style type="text/css"></style> -->
+<!-- 	<script type="text/javascript">
+		alert('welcome !')
+	</script> -->
+</head>
+<body>
+	<h1>C&A Analysis<sup>&copy;<!--charactercodes--></sup></h1><!--This is comment -->
+	<p style="color:#357180;">This is a solution for C&A. We will provide several Function Modules, including some <b>ML models</b> and <b>Data Visualization tools</b>. This solution uses different kind of data, such as 1<sup>st</sup><!--superscript--> party data, 2<sup>nd</sup> party data, and 3<sup>rd</sup>party data</p>
+	<p class="important">This solution contains the following 3 parts:</p>
+<!-- 	<ol type="A"  start="1">
+		<li><a href="#hot-products">热销商品</a></li>
+		<li><a href="#sales-trend">销量趋势</a></li>
+		<li value="999"><a href="#store-activity">店内活动</a>
+			<ol type="i">
+				<li>activity of this week</li>
+				<li>activity of this month</li>
+				<li>activity of last 3 month</li>
+			</ol>
+		</li>
+	</ol>
+
+	<p>You can also find it below: </p> -->
+<!-- 	<div class="button-group">
+    	<button type="button" class="button button-pill button-action">Option 1</button>
+    	<button type="button" class="button button-pill button-action">Option 2</button>
+    	<button type="button" class="button button-pill button-action">Option 3</button>
+  	</div> -->
+	<ul type="circle">
+		<li>
+			<!-- <a href="#hot-products">热销商品</a> -->
+			<a href="#hot-products" class="button button-glow button-rounded button-raised button-primary">热销商品</a>
+		</li>
+		<li>
+			<!-- <a href="#sales-trend">销量趋势</a> -->
+			<a href="#sales-trend" class="button button-glow button-border button-rounded button-primary">销量趋势</a>
+		</li>
+		<li>
+			<!-- <a href="#store-activity">店内活动</a> -->
+			<a href="#store-activity" class="button button-glow button-rounded button-highlight">店内活动</a>
+		</li>
+	</ul>
+
+	<p>Here are some useful character codes: <a href="https://www.rapidtables.com/web/html/html-codes.html">Character code tables</a><!--global link--></p>
+
+	<h2 id="hot-products"><i>热销商品</i></h2>
+	<!-- <hr>horizontal rule -->
+	<p>This module show the <b>Hot Products</b><!--bold--> of C&A. You can find the most popular products during last month, and you will learn which kind of products are selling best, so you can prepare for the following steps.</p>
+	<p class="important">Here are some order samples </p>
+	<table>
+		<thead>
+			<tr>
+				<th>date</th>
+				<th>order_id</th>
+				<th>customer_id</th>
+				<th>product</th>
+				<th>quantity</th>
+				<th>price</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>2018-06-23 15:23:30</td>
+				<td>2018003000000001</td>
+				<td>00001</td>
+				<td>s001</td>
+				<td>3</td>
+				<td>30￥</td>
+			</tr>
+			<tr>
+				<td>2018-06-23 15:25:30</td>
+				<td>2018003000000002</td>
+				<td>00001</td>
+				<td>s001</td>
+				<td>10</td>
+				<td>30￥</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>2018-06-23 15:29:30</td>
+				<td>2018003000000006</td>
+				<td>00001</td>
+				<td>豆奶</td>
+				<td>15</td>
+				<td>30￥</td>
+			</tr>			
+		</tfoot>
+	</table>
+
+	<h2 id="sales-trend"><i>销量走势</i><!--italic--></h2>
+	<!-- <hr> -->
+	<p>你可以看到不同类别的产品在一段时间内（默认一个月）的销量，平均价格走势，以及<b>竞品的销量和价格走势</b>，从而帮助你及时调整营销策略。</p>
+	<p class="important">The following is the <b>comparision</b> of the lastest two months </p>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">2018-05</th>
+				<th colspan="2">2018-06</th>
+			</tr>
+			<tr>
+				<th>日期</th>
+				<th>销量</th>
+				<th>日期</th>
+				<th>销量</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>2018-05-01</td>
+				<td rowspan="3">203</td>
+				<td>2018-06-01</td>
+				<td>206</td>
+			</tr>
+			<tr>
+				<td>2018-05-02</td>
+				<!-- <td>205</td> -->
+				<td>2018-06-02</td>
+				<td>210</td>
+			</tr>
+			<tr>
+				<td>2018-05-03</td>
+				<!-- <td>207</td> -->
+				<td>2018-06-03</td>
+				<td>227</td>
+			</tr>		
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>2018-05-04</td>
+				<td>210</td>
+				<td>2018-06-04</td>
+				<td>235</td>				
+			</tr>
+		</tfoot>
+	</table>
+	<script type="text/javascript" src="./trend.js"></script>
+	
+
+	<h2 id="store-activity"><i>店内活动</i></h2>
+	<!-- <hr> -->
+	<p>这里展示了最近您的店铺正在进行的<u>营销活动</u><!--underline-->，为了评估活动对销量的影响，我们提供了活动前后的销售情况对比，以及不同活动效果的对比。</p>
+
+	<!-- <hr> -->
+	<!--<pre>这就是    结论</pre>--><!--preformatted text-->
+	<p>返回查看
+		<a href="#hot-products" class="button button-glow button-rounded button-raised button-primary">热销商品</a>
+		或
+		<a href="#sales-trend" class="button button-glow button-border button-rounded button-primary">销量趋势</a>
+		或
+		<a href="#store-activity" class="button button-glow button-rounded button-highlight">店内活动</a>
+	</p>
+
+	<h3>联系我们</h3>
+	<p class="important"><img src="https://raw.githubusercontent.com/zluckyhou/zluckyhou.github.com/master/img/pen.jpg" alt="A rabbit" width="30px" height="30px">如有疑问，请邮箱联系：<a href="mailto:zluckyhou@163.com",title="Email Me">Email Me</a></p>
+<!-- 	<p><img src="https://raw.githubusercontent.com/zluckyhou/zluckyhou.github.com/master/img/panda.png" alt="skateboard" width="30px" height="30px"><a href="mailto:zluckyhou@163.com?subject=An important message">Email Me</a> with a subject predefined.</p> -->
+
+<!-- 	<h3>Some definations:</h3>
+	<dl>
+		<dt>Hot-products</dt>
+			<dd>the best selling products during last week</dd>
+		<dt>Selling-trend</dt>
+			<dd>products selling trend last week</dd>
+	</dl> -->
+
+<!-- 	<p>下面是我的一张作品</p>
+	<img src="https://raw.githubusercontent.com/zluckyhou/zluckyhou.github.com/master/img/art.jpg" alt="厦大艺术学院" width="1920px" height="1080px">
+ -->
+</body>
+</html>
+

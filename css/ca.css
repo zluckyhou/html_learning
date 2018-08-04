@@ -1,0 +1,109 @@
+@import url('base.css');
+@import url('buttons.css');
+
+h1 {
+	color: #9ACA42;
+	/*font-family: Times New Roman;*/
+	font-family: Arial;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 5px;
+	/*border: 2px solid #E9B82B;*/
+	border-bottom: 2px solid #4D8353;
+	text-align: center;
+}
+
+h2 {
+	font-size: 25px;
+	/*background-color: #FAEBD7;*/
+	color: 	#468847;
+	padding: 10px;
+	/*border: 1px dashed #4D8353;*/
+	border-bottom: 1px dashed #4D8353;
+	font-family: cursive;
+	text-align: center;
+
+}
+
+h3 {
+	font-size: 20px;
+	border-bottom: 1px dashed #4D8353;
+	/*color: #696969;*/
+	padding: 10px;
+	font-family: cursive;
+	text-align: center;
+}
+
+p {
+	color: #357180;
+	/*color: #eab02f;*/
+	font-family: Verdana;
+	font-size: 16px;
+	font-weight: normal;
+	padding: 5px 10px 8px 30px;
+	/*border: 1px dashed #4D8353;*/
+}
+
+
+dt {
+	padding: 5px 20px;
+	color: 	#2F4F4F;
+	font-weight: bold;
+}
+
+dd {
+	color: #2F4F4F;
+}
+
+ul,ol {
+	margin: 5px 20px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	height: 30px;
+	text-align: center;
+	/*background-color: blue;*/
+	/*color: white;*/
+}
+
+td {
+	text-align: center;
+	/*vertical-align: text-bottom;*/
+	/*vertical-align: bottom;*/
+}
+
+table,th,td{
+	border: 1px solid blue;
+	margin: 30px;
+	color: #357180;
+	/*font-family: Verdana;*/
+}
+
+#store-activity {
+	color: orange;
+}
+
+.important {
+	/*font-weight: bold;*/
+	border: 1px orange dashed;
+}
+
+.important b {
+	color: red;
+}
+
+b:hover {
+	/*padding-left: 40px;*/
+	color: #3366cc;
+}
+
+a:hover {
+	color: #FFD700;
+}
+
+
