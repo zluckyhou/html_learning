@@ -35,7 +35,7 @@
     }
   ],
   "dependencies": {
-    "zrender": "4.0.4"
+    "zrender": "4.3.3"
   },
   "deprecated": false,
   "description": "A powerful charting and visualization library for browser",
@@ -56,7 +56,7 @@
     "rollup": "0.50.0",
     "rollup-plugin-node-resolve": "3.0.0",
     "rollup-plugin-uglify": "2.0.1",
-    "zrender": "4.0.4"
+    "zrender": "4.3.3"
   },
   "homepage": "http://echarts.baidu.com/",
   "keywords": [
